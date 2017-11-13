@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bindnewphone_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/base_title"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        ></include>
+    <View
+        android:background="@color/app_segmentation_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <TextView
+        android:id="@+id/new_num"
+        android:text="提示:您即将绑定新手号"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--账号-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <EditText
+            android:id="@+id/bind_phone_et"
+            android:hint="请输入您验证码"
+            android:background="@drawable/line_et_bg"
+            android:shadowColor="@color/app_black"
+            android:digits="0123456789"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <!--确认按钮-->
+    <Button
+        android:id="@+id/bind_phone_bt"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_login_bt"
+        android:text="绑定"
+        android:textColor="@color/app_white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

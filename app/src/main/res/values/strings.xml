@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">美视</string>
+    <string name="get_verify_code_txt">获取验证码</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+</resources>

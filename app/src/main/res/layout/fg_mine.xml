@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_fg_mine_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fg_mine_civ"
+        android:src="@mipmap/icon_default_img"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:id="@+id/fg_mine_ll"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:id="@+id/fg_mine_lgoin"
+                       android:text="登录"
+                       android:textSize="20sp"
+                       android:layout_centerInParent="true"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_weight="0.5"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <View
+                       android:background="@color/app_black"
+                       android:layout_centerInParent="true"
+                       android:layout_width="1dp"
+                       android:layout_height="20dp"></View>
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:id="@+id/fg_mine_register"
+                       android:text="注册"
+                       android:textSize="20sp"
+                       android:layout_centerInParent="true"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </RelativeLayout>
+           </LinearLayout>
+           <TextView
+               android:id="@+id/fg_mine_user_name_tv"
+               android:layout_centerInParent="true"
+               android:text="彬二狗"
+               android:textColor="@color/app_white"
+               android:textSize="20sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/app_white"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:id="@+id/fg_mine_user_msg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/fg_mine_iv_01"
+                    android:src="@mipmap/icon_fg_mine_img_01"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:text="个人资料"
+                    android:layout_toRightOf="@id/fg_mine_iv_01"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <View
+                android:layout_marginLeft="10dp"
+                android:background="@color/app_segmentation_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <RelativeLayout
+                android:id="@+id/fg_mine_set"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/fg_mine_iv_02"
+                    android:src="@mipmap/icon_fg_mine_img_02"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:text="设置"
+                    android:layout_toRightOf="@id/fg_mine_iv_02"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <View
+                android:layout_marginLeft="10dp"
+                android:background="@color/app_segmentation_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <RelativeLayout
+                android:id="@+id/fg_mine_mycolleage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/fg_mine_iv_03"
+                    android:src="@mipmap/icon_fg_mine_img_03"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:text="我的收藏"
+                    android:layout_toRightOf="@id/fg_mine_iv_03"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <View
+                android:layout_marginLeft="10dp"
+                android:background="@color/app_segmentation_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <RelativeLayout
+                android:id="@+id/fg_mine_download"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/fg_mine_iv_04"
+                    android:src="@mipmap/icon_fg_mine_img_04"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:text="我的缓存"
+                    android:layout_toRightOf="@id/fg_mine_iv_04"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--<Space-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp" />-->
+        <View
+            android:layout_marginLeft="10dp"
+            android:background="@color/app_segmentation_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:id="@+id/fg_home_version_change"
+            android:background="@color/app_white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/fg_mine_iv_05"
+                android:src="@mipmap/icon_fg_mine_img_05"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="版本更新"
+                android:layout_toRightOf="@id/fg_mine_iv_05"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/icon_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <!--<View-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@color/app_segmentation_gray"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"></View>-->
+
+        <!--<View-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@color/app_segmentation_gray"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"></View>-->
+        <!--<Space-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp" />-->
+        <RelativeLayout
+            android:layout_weight="1"
+            android:background="@color/app_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/fg_home_out"
+                android:background="#f0f0f0"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="退出登录"
+                    android:textSize="18sp"
+                    android:textColor="@color/popup_dialog_btn_text_color"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+            android:id="@+id/view"
+            android:background="@color/app_white"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></View>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

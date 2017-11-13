@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/basegreen_title_bg"
+        android:background="@color/app_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--返回按钮-->
+        <RelativeLayout
+            android:id="@+id/basegreen_back_rl"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_back_white"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <!--title-->
+        <TextView
+            android:id="@+id/basegreen_title_tv"
+            android:text="VR城市空间"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textColor="@color/app_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--二级标题-->
+        <RelativeLayout
+            android:id="@+id/basegreen_second_rl"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/basegreen_second_title_iv"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/basegreen_second_title_tv"
+                android:text="副标题"
+                android:textColor="@color/app_white"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

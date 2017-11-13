@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--碎片容器-->
+    <RelativeLayout
+        android:id="@+id/activity_index_fg_content"
+        android:layout_weight="12"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </RelativeLayout>
+    <!--下部切换-->
+    <View
+        android:layout_width="match_parent"
+        android:background="#B0B0B0"
+        android:layout_height="0.5dp"></View>
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="@color/app_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <!--首页-->
+        <LinearLayout
+            android:id="@+id/home_index_home_ll"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home_index_home_iv"
+                android:layout_weight="1.5"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/icon_activity_index_home"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/home_index_home_tv"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="首页"
+                android:textColor="#A1A1A1"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <!--地图-->
+        <LinearLayout
+            android:id="@+id/home_index_paymoney_ll"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home_index_paymoney_iv"
+                android:layout_weight="1.5"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/icon_location"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/home_index_paymoney_tv"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="地图"
+                android:textColor="#A1A1A1"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <!--用户反馈-->
+        <LinearLayout
+            android:id="@+id/home_index_feedback_ll"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home_index_feedback_iv"
+                android:layout_weight="1.5"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/icon_activity_index_video"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/home_index_feedback_tv"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="视频"
+                android:textColor="#A1A1A1"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <!--我的-->
+        <LinearLayout
+            android:id="@+id/home_index_aboutme_ll"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home_index_aboutme_iv"
+                android:layout_weight="1.5"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/icon_activity_index_me"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/home_index_aboutme_tv"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="我的"
+                android:textColor="#A1A1A1"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

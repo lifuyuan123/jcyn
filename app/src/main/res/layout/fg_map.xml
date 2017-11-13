@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--<include-->
+    <!--layout="@layout/base_title_green"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"></include>-->
+    <!--顶部栏-->
+    <RelativeLayout
+        android:id="@+id/basegreen_title_bg"
+        android:background="@color/app_color"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    <!--定位-->
+    <LinearLayout
+    android:weightSum="1"
+    android:id="@+id/basegreen_back_rl"
+    android:background="@drawable/fg_home_location"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal"
+    android:layout_centerVertical="true"
+    android:layout_width="80dp"
+    android:layout_height="20dp">
+    <ImageView
+    android:src="@mipmap/icon_dingwei_img"
+    android:layout_marginLeft="5dp"
+    android:layout_gravity="center_vertical"
+    android:layout_width="15dp"
+    android:layout_height="15dp" />
+
+     <TextView
+      android:layout_weight="1"
+      android:id="@+id/fg_home_cityname_tv"
+      android:textSize="12sp"
+      android:textColor="@color/app_white"
+      android:maxLines="1"
+      android:layout_marginRight="5dp"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/basegreen_title_tv"
+        android:text="VR城市空间"
+        android:layout_centerInParent="true"
+        android:textSize="23sp"
+        android:textColor="@color/app_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    二级标题
+    <RelativeLayout
+    android:layout_alignParentRight="true"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp">
+    <ImageView
+    android:id="@+id/fg_home_query"
+    android:src="@mipmap/icon_search_img"
+    android:scaleType="fitXY"
+    android:layout_centerInParent="true"
+    android:layout_marginRight="10dp"
+    android:layout_width="20dp"
+    android:layout_height="20dp" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/fg_map_mv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+</LinearLayout>

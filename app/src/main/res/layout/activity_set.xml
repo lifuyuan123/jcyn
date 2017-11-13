@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/base_title_green"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></include>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <RelativeLayout
+        android:id="@+id/activity_set_change_password_rl"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="修改登录密码"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/icon_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <RelativeLayout
+        android:id="@+id/activity_set_change_phonenum_rl"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="修改绑定手机"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/icon_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <RelativeLayout
+        android:id="@+id/activity_set_change_email_rl"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="修改绑定邮箱"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/icon_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!--<RelativeLayout-->
+        <!--android:background="@color/app_white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp">-->
+        <!--<TextView-->
+            <!--android:text="消息通知"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textColor="@color/app_black_70"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<com.zcw.togglebutton.ToggleButton-->
+            <!--android:id="@+id/activity_set_change_message_tb"-->
+            <!--app:tbSpotColor="@color/app_color"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="20dp" />-->
+     <!--</RelativeLayout>-->
+    <!--<Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp" />-->
+    <View
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></View>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/activity_search_item_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_below="@+id/view"
+            android:id="@+id/activity_search_item_tv"
+            android:text="马栏山国际公寓"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

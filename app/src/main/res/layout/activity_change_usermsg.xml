@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<include-->
+        <!--layout="@layout/base_title"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--&gt;</include>-->
+    <include layout="@layout/base_title_green"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <EditText
+            android:id="@+id/activity_change_usermsg_name_et"
+            android:hint="昵称"
+            android:background="@drawable/line_et_bg"
+            android:shadowColor="@color/app_black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/activity_change_usermsg_adress_et"
+            android:hint="地址"
+            android:background="@drawable/line_et_bg"
+            android:shadowColor="@color/app_black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/activity_change_usermsg_sex_et"
+            android:hint="性别"
+            android:background="@drawable/line_et_bg"
+            android:shadowColor="@color/app_black"
+            android:digits="男女"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text"
+        android:text="标题"
+        android:textSize="20sp"
+        android:textColor="@color/app_black_70"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/img"
+            android:src="@mipmap/icon_default_img"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/image_text"
+            android:text="VR视频"
+            android:textColor="@color/app_white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/activity_deails_bg"
+            android:layout_width="100dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/viedo_showall"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:id="@+id/video_tv_synopsis"-->
+            <!--android:maxLines="1"-->
+            <!--android:ellipsize="end"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="这里是简介1111111"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/video_tv_synopsis"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="显示全部"-->
+            <!--android:textColor="@color/app_color"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</RelativeLayout>-->
+
+
+
+</LinearLayout>

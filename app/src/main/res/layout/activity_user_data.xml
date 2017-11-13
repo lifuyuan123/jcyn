@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/base_title_green"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"></include>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!--头像-->
+    <RelativeLayout
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="头像"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/activity_user_civ"
+            android:src="@mipmap/icon_default_img"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!--昵称-->
+    <RelativeLayout
+        android:id="@+id/activity_user_name_ll"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="昵称"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_user_name_tv"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/app_segmentation_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <!--性别-->
+    <RelativeLayout
+        android:id="@+id/activity_user_sex_ll"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="性别"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_user_sex_tv"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!--电话号码-->
+    <RelativeLayout
+        android:id="@+id/activity_user_phone_ll"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="电话号码"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_user_telephone_tv"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/app_segmentation_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <!--地址-->
+    <RelativeLayout
+        android:id="@+id/activity_user_adress_ll"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="地址"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_user_place_tv"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!--邮箱-->
+    <RelativeLayout
+        android:id="@+id/activity_user_email_ll"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="邮箱"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_black_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_user_email_tv"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <View
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></View>
+
+</LinearLayout>

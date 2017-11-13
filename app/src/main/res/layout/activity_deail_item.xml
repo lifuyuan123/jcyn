@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/base_title_green"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        ></include>
+     <LinearLayout
+         android:focusableInTouchMode="true"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ImageView
+               android:id="@+id/activity_deail_item_iv"
+               android:src="@mipmap/icon_default_img"
+               android:scaleType="fitXY"
+               android:layout_width="match_parent"
+               android:layout_height="180dp" />
+           <LinearLayout
+               android:background="@color/app_white"
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+               <TextView
+                   android:id="@+id/activity_deail_item_title_tv"
+                   android:text="黄龙溪谷"
+                   android:gravity="center_vertical"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="18sp"
+                   android:textColor="@color/app_black_70"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp" />
+           </LinearLayout>
+           <RelativeLayout
+               android:background="@color/app_segmentation_gray"
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+               <ImageView
+                   android:id="@+id/location_iv"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dp"
+                   android:src="@mipmap/icon_location_small"
+                   android:layout_width="22dp"
+                   android:layout_height="22dp" />
+               <TextView
+                   android:id="@+id/activity_deail_item_title"
+                   android:text="彭山县牧马镇"
+                   android:maxWidth="280dp"
+                   android:layout_toRightOf="@id/location_iv"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="5dp"
+                   android:textSize="18sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <ImageView
+                   android:id="@+id/location_iv1"
+                   android:src="@mipmap/icon_telephone"
+                   android:layout_centerVertical="true"
+                   android:layout_toRightOf="@id/activity_deail_item_title"
+                   android:layout_marginLeft="40dp"
+                   android:layout_width="22dp"
+                   android:layout_height="22dp" />
+               <TextView
+                   android:id="@+id/activity_deail_item_phone"
+                   android:text="028-888888888"
+                   android:layout_toRightOf="@id/location_iv1"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="5dp"
+                   android:textSize="18sp"
+                   android:maxWidth="250dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+           </RelativeLayout>
+           <LinearLayout
+               android:background="@color/app_white"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:text="简介"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="18dp"
+                   android:textColor="@color/app_black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/activity_deail_item_deail_tv"
+                   android:textColor="#777777"
+                   android:textSize="14dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:text="asdasdasdasdasdasdasdasdasdaasdasdasdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdada"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <LinearLayout
+               android:background="@color/app_white"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:background="@color/app_segmentation_gray"
+                   android:layout_height="1dp" />
+               <TextView
+                   android:text="评论"
+                   android:gravity="center_vertical"
+                   android:textSize="18dp"
+                   android:textColor="@color/app_black"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:background="@color/app_segmentation_gray"
+                   android:layout_height="1dp" />
+               <!--评论内容-->
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <ListView
+                       android:id="@+id/activity_deatils_item_comment_lv"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"></ListView>
+               </LinearLayout>
+               <TextView
+                   android:id="@+id/load_more_tv"
+                   android:text="点击加载更多"
+                   android:background="@drawable/acitvity_detail_loadmore"
+                   android:textColor="#777777"
+                   android:textSize="12sp"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_width="120dp"
+                   android:layout_height="20dp" />
+           </LinearLayout>
+       </LinearLayout>
+    </ScrollView>
+     </LinearLayout>
+</LinearLayout>

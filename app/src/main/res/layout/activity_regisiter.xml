@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/base_title"
+    android:layout_height="50dp"
+    android:layout_width="match_parent"
+    ></include>
+    <View
+        android:background="@color/app_segmentation_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+    <!--手机号-->
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <EditText
+            android:background="@drawable/line_et_bg"
+            android:hint="请输入您的手机号码"
+            android:numeric="integer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--短信息-->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+            <EditText
+                android:background="@drawable/line_et_bg"
+                android:numeric="integer"
+                android:id="@+id/activity_register_messageverifcation_et"
+                android:layout_weight="3"
+                android:hint="请输入验证码"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <Button
+            android:background="@drawable/activity_register_bt"
+            android:text="获取验证码"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--安全码-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+            <EditText
+                android:numeric="integer"
+                android:background="@drawable/line_et_bg"
+                android:id="@+id/activity_register_imgverifcation_et"
+                android:layout_weight="3"
+                android:hint="请输入验证码"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--设置密码-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <EditText
+            android:background="@drawable/line_et_bg"
+            android:hint="请输入您的密码"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

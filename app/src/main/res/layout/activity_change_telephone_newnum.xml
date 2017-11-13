@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_change_telephone_new_ll"
+    android:background="@color/app_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/base_title"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        ></include>
+    <View
+        android:background="@color/app_segmentation_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <!--账号-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <EditText
+            android:id="@+id/new_phonenum_et"
+            android:hint="请输入您的新手机号码"
+            android:background="@drawable/line_et_bg"
+            android:shadowColor="@color/app_black"
+            android:digits="0123456789"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--手机验证码-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <EditText
+            android:id="@+id/new_oldphonesms_et"
+            android:layout_weight="3"
+            android:hint="请输入短信验证码"
+            android:background="@drawable/line_et_bg"
+            android:digits="0123456789"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <!--确认按钮-->
+    <Button
+        android:id="@+id/new_phone_bt"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_login_bt"
+        android:text="验证新手机号"
+        android:textColor="@color/app_white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

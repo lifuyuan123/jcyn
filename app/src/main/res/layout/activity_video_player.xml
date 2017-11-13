@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/base_title"
+    android:layout_height="50dp"
+    android:layout_width="match_parent"></include>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <com.google.vr.sdk.widgets.video.VrVideoView
+        android:id="@+id/activity_video_player_gvr"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></com.google.vr.sdk.widgets.video.VrVideoView>
+    <LinearLayout
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+        <!-- Seeking UI & progress indicator.-->
+        <SeekBar
+            android:id="@+id/seek_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="32dp"
+            android:layout_weight="8"
+            android:layout_width="0dp"/>
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/volume_toggle"
+            android:paddingStart="0dp"
+            android:layout_width="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.8"
+            android:src="@drawable/volume_on"
+            android:paddingLeft="0dp" />
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/status_text"
+        android:text="Loading Video..."
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="15dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"/>
+    <LinearLayout
+        android:background="@color/app_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="绝命岛VR3D"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="时长:"
+            android:textColor="@color/app_color"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="1:34:54"
+            android:textColor="@color/app_color"
+            android:maxWidth="50dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="大小:"
+            android:textColor="@color/app_color"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="625M"
+            android:textColor="@color/app_color"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/app_segmentation_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"></View>
+    <RelativeLayout
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/id_jj"
+            android:text="简介"
+            android:textSize="20sp"
+            android:textColor="@color/app_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/video_text"
+            android:text="     《绝命岛》是由龙腾啊实打实大师大师大师大师大师大啊实打实大师大师大师大师大师大师大师大师大师大。"
+            android:textSize="15sp"
+            android:textColor="@color/app_color"
+            android:layout_below="@id/id_jj"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
